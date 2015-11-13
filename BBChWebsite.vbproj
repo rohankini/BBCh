@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{73C80860-4B68-44FF-8EE9-2E2BC2E715B8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BBChWebsite</RootNamespace>
+    <AssemblyName>BBChWebsite</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>BBChWebsite.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>BBChWebsite.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AboutBBCh.htm" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="BBCh14Race01.htm" />
+    <Content Include="BBCh14Race02.htm" />
+    <Content Include="BBCh14Race03.htm" />
+    <Content Include="BBCh14Race04.htm" />
+    <Content Include="BBCh14Race05.htm" />
+    <Content Include="BBCh14Race06.htm" />
+    <Content Include="BBCh14Race07.htm" />
+    <Content Include="BBCh15Race01.htm" />
+    <Content Include="BBCh15Race02.htm" />
+    <Content Include="BBCh15Race03.htm" />
+    <Content Include="BBCh15Race04.htm" />
+    <Content Include="BBCh15Race05.htm" />
+    <Content Include="BBCh15Race06.htm" />
+    <Content Include="BBCh15Race07.htm" />
+    <Content Include="BBCh15Race08.htm" />
+    <Content Include="BBCh15Race09.htm" />
+    <Content Include="BBCh15Race10.htm" />
+    <Content Include="BBChLogoCompetition2015.htm" />
+    <Content Include="BBChTeams.htm" />
+    <Content Include="BBCh_Expenses.htm" />
+    <Content Include="Calendar2014.htm" />
+    <Content Include="Calendar2015.htm" />
+    <Content Include="FAQs.htm" />
+    <Content Include="Footer.htm" />
+    <Content Include="fullwidth.html" />
+    <Content Include="Gallery.htm" />
+    <Content Include="google27ecab3ba187f236.html" />
+    <Content Include="google5254c05fa99b3b43.html" />
+    <Content Include="Header.htm" />
+    <Content Include="Images\140621-BBCh14-IndividualStandings.jpg" />
+    <Content Include="Images\140621-BBCh14-TeamStandings.jpg" />
+    <Content Include="Images\BBCh14-01Banner.jpg" />
+    <Content Include="Images\BBCh14Race02Banner.jpg" />
+    <Content Include="Images\BBCh14Race04Banner.jpg" />
+    <Content Include="Images\BBCh14Race05Banner.jpg" />
+    <Content Include="Images\BBCh14Race06Banner.jpg" />
+    <Content Include="Images\BBCh14Race07Result.jpg" />
+    <Content Include="Images\BBCh14Race6_GunjurCourseMap.jpg" />
+    <Content Include="Images\BBCh14Race6_GunjurElevation.jpg" />
+    <Content Include="Images\BBCh14Race7Sponosor.jpg" />
+    <Content Include="Images\BBCh14_01ITTImg001.jpg" />
+    <Content Include="Images\BBCh14_01ITTImg002.jpg" />
+    <Content Include="Images\BBCh14_01ITTImg003.jpg" />
+    <Content Include="Images\BBCh14_01ITTImg004.jpg" />
+    <Content Include="Images\BBCH14_01ITTResult.jpg" />
+    <Content Include="Images\BBCh14Race03Banner.jpg" />
+    <Content Include="Images\BBCh14_Race04_TwilightCritResult.jpg" />
+    <Content Include="Images\BBCh15Race04Banner2.jpg" />
+    <Content Include="Images\BBCh15Race04_CritResult.jpg" />
+    <Content Include="Images\BBCh15Race05Banner.jpg" />
+    <Content Include="Images\BBCh15Race05Map1.jpg" />
+    <Content Include="Images\BBCh15Race05Map2.jpg" />
+    <Content Include="Images\BBCh15Race06Banner.jpg" />
+    <Content Include="Images\BBCh15Race07Banner.jpg" />
+    <Content Include="Images\BBCh15Race08Banner.jpg" />
+    <Content Include="Images\BBCh15Race09Banner.jpg" />
+    <Content Include="Images\BBCh15_2_Banner1.jpg" />
+    <Content Include="Images\BBCh15_Race02_001.jpg" />
+    <Content Include="Images\BBCh15_Race06_SP_Banner.gif" />
+    <Content Include="Images\BBCh15_Race07_SP_Banner.gif" />
+    <Content Include="Images\BBCh15_Race08_SP_Banner.gif" />
+    <Content Include="Images\BBChLogoCompetition.jpg" />
+    <Content Include="Images\BBChParty001.jpg" />
+    <Content Include="Images\BBChParty002.jpg" />
+    <Content Include="Images\BBChParty003.jpg" />
+    <Content Include="Images\BBChParty004.jpg" />
+    <Content Include="Images\BBChStyle.css" />
+    <Content Include="Images\BhartiyaCityLogo.jpg" />
+    <Content Include="Images\BhartiyaCityLogoH.jpg" />
+    <Content Include="Images\CalendarSlider2015.jpg" />
+    <Content Include="Images\FirefoxLogo.jpg" />
+    <Content Include="Images\FirefoxLogoH.jpg" />
+    <Content Include="Images\GunjurLake-CircuitSP.jpg" />
+    <Content Include="Images\Img01.jpg" />
+    <Content Include="Images\Img02.jpg" />
+    <Content Include="Images\Img03.jpg" />
+    <Content Include="Images\Img04.jpg" />
+    <Content Include="Images\Img05.jpg" />
+    <Content Include="Images\Img06.jpg" />
+    <Content Include="Images\ITTStartList.jpg" />
+    <Content Include="Images\LeopardSkynLogoG.jpg" />
+    <Content Include="Images\LeopardSkynLogoH.jpg" />
+    <Content Include="Images\Logo2015\FaizanHQ001.jpg" />
+    <Content Include="Images\Logo2015\FaizanHQ002.jpg" />
+    <Content Include="Images\Logo2015\FaizanHQ003.jpg" />
+    <Content Include="Images\Logo2015\FaizanHQ004.jpg" />
+    <Content Include="Images\Logo2015\FaizanHQ005.jpg" />
+    <Content Include="Images\Logo2015\FaizanHQ006.jpg" />
+    <Content Include="Images\Logo2015\FaizanHQ007.jpg" />
+    <Content Include="Images\Logo2015\FaizanHQ008.jpg" />
+    <Content Include="Images\Logo2015\FaizanHQ009.jpg" />
+    <Content Include="Images\Logo2015\FaizanHQ010.jpg" />
+    <Content Include="Images\Logo2015\FarahHQ001.jpg" />
+    <Content Include="Images\Logo2015\FarahHQ002.jpg" />
+    <Content Include="Images\Logo2015\FarahHQ003.jpg" />
+    <Content Include="Images\Logo2015\FarahHQ004.jpg" />
+    <Content Include="Images\Logo2015\FarahHQ005.jpg" />
+    <Content Include="Images\Logo2015\FarahHQ006.jpg" />
+    <Content Include="Images\Logo2015\FarahHQ007.jpg" />
+    <Content Include="Images\Logo2015\FarahHQ008.jpg" />
+    <Content Include="Images\Logo2015\FarahHQ009.jpg" />
+    <Content Include="Images\Logo2015\FarahHQ010.jpg" />
+    <Content Include="Images\Logo2015\ObleHQ001.jpg" />
+    <Content Include="Images\Logo2015\SumanHQ001.jpg" />
+    <Content Include="Images\Logo2015\Vinit001.jpg" />
+    <Content Include="Images\Logo2015\VinitHQ001.jpg" />
+    <Content Include="Images\Logo2015\WINNERimg.jpg" />
+    <Content Include="Images\LogoCompetitionImg.jpg" />
+    <Content Include="Images\BBChRace07Banner.jpg" />
+    <Content Include="Images\Nandi100kmUturnImg1.jpg" />
+    <Content Include="Images\Nandi100kmUturnImg2.jpg" />
+    <Content Include="Images\NandiAmateurRouteMap.jpg" />
+    <Content Include="Images\Race01_001.jpg" />
+    <Content Include="Images\Race01_002.jpg" />
+    <Content Include="Images\Race02PodiumImg.jpg" />
+    <Content Include="Images\Race02_001.jpg" />
+    <Content Include="Images\Race02_002.jpg" />
+    <Content Include="Images\Race03_001.jpg" />
+    <Content Include="Images\Race03_002.jpg" />
+    <Content Include="Images\Race03_003.jpg" />
+    <Content Include="Images\Race03_004.jpg" />
+    <Content Include="Images\Race04_001.jpg" />
+    <Content Include="Images\Race04_002.jpg" />
+    <Content Include="Images\Race05_001.jpg" />
+    <Content Include="Images\Race05_002.jpg" />
+    <Content Include="Images\Race05_003.jpg" />
+    <Content Include="Images\Race05_004.jpg" />
+    <Content Include="Images\Race06_001.jpg" />
+    <Content Include="Images\Race06_002.jpg" />
+    <Content Include="Images\Race06_003.jpg" />
+    <Content Include="Images\Race06_004.jpg" />
+    <Content Include="Images\Race07_001.jpg" />
+    <Content Include="Images\Race07_002.jpg" />
+    <Content Include="Images\Race08_001.jpg" />
+    <Content Include="Images\Race08_002.jpg" />
+    <Content Include="Images\Race08_003.jpg" />
+    <Content Include="Images\Race08_004.jpg" />
+    <Content Include="Images\Race09_001.jpg" />
+    <Content Include="Images\Race09_002.jpg" />
+    <Content Include="Images\Race09_003.jpg" />
+    <Content Include="Images\Race09_004.jpg" />
+    <Content Include="Images\Race10_001.jpg" />
+    <Content Include="Images\Race10_002.jpg" />
+    <Content Include="Images\Race10_003.jpg" />
+    <Content Include="Images\Race10_004.jpg" />
+    <Content Include="Images\Race14-02_001.jpg" />
+    <Content Include="Images\Race14-02_002.jpg" />
+    <Content Include="Images\Race14-02_003.jpg" />
+    <Content Include="Images\Race14-02_004.jpg" />
+    <Content Include="Images\Race14-04_001.jpg" />
+    <Content Include="Images\Race14-04_002.jpg" />
+    <Content Include="Images\Race14-04_003.jpg" />
+    <Content Include="Images\Race14-04_004.jpg" />
+    <Content Include="Images\RaceInfo02_001.jpg" />
+    <Content Include="Images\RaceInfo02_002.jpg" />
+    <Content Include="Images\RaceInfo02_003.jpg" />
+    <Content Include="Images\RaceInfo02_004.jpg" />
+    <Content Include="Images\RaceInfo02_005.jpg" />
+    <Content Include="Images\RaceInfo02_006.jpg" />
+    <Content Include="Images\RaceInfo02_007.jpg" />
+    <Content Include="Images\RaceInfo02_008.jpg" />
+    <Content Include="Images\RaceInfo03_001.jpg" />
+    <Content Include="Images\RaceInfo03_002.jpg" />
+    <Content Include="Images\RaceInfo03_003.jpg" />
+    <Content Include="Images\RaceInfo03_004.jpg" />
+    <Content Include="Images\RaceInfo05_001.jpg" />
+    <Content Include="Images\RaceInfo05_002.jpg" />
+    <Content Include="Images\RaceInfo05_003.jpg" />
+    <Content Include="Images\RaceInfo05_004.jpg" />
+    <Content Include="Images\RaceInfo06_001.jpg" />
+    <Content Include="Images\RaceInfo15_09_001.jpg" />
+    <Content Include="Images\Result_BBCh14_01.jpg" />
+    <Content Include="Images\Result_BBCh14_02.jpg" />
+    <Content Include="Images\SitaBhatejaLogo.jpg" />
+    <Content Include="Images\SitaBhatejaLogoH.jpg" />
+    <Content Include="Images\SpectrumPhysioLogoG.jpg" />
+    <Content Include="Images\SpectrumPhysioLogoH.jpg" />
+    <Content Include="Images\SponsorImg001.jpg" />
+    <Content Include="Images\SponsorImg002.jpg" />
+    <Content Include="Images\SponsorImg004.jpg" />
+    <Content Include="Images\SponsorImg005.jpg" />
+    <Content Include="Images\SponsorImg006.jpg" />
+    <Content Include="Images\SponsorImg007.jpg" />
+    <Content Include="Images\SponsorImg008.jpg" />
+    <Content Include="Images\SponsorProElite.jpg" />
+    <Content Include="Images\SponsorVyoma.jpg" />
+    <Content Include="Images\SponsorYogaBar.jpg" />
+    <Content Include="Images\Strava100kmRoute.jpg" />
+    <Content Include="Images\StravaNandi100kmRoute.jpg" />
+    <Content Include="Images\StravaNandi100kmRoute2015.jpg" />
+    <Content Include="Images\SufferFestLogo.jpg" />
+    <Content Include="Images\SufferFestLogoH.jpg" />
+    <Content Include="Images\TeamBOTS.jpg" />
+    <Content Include="Images\TeamCleatedWarriors.jpg" />
+    <Content Include="Images\TeamJakkurFlyers.jpg" />
+    <Content Include="Images\TeamProCycle.jpg" />
+    <Content Include="Images\TeamSpecializedKYNKYNY.jpg" />
+    <Content Include="Images\TeamSpectrum.jpg" />
+    <Content Include="Images\TeamWheelSports.jpg" />
+    <Content Include="Images\SponsorImg003.jpg" />
+    <Content Include="Images\TFNLogo.jpg" />
+    <Content Include="Images\TFNLogoH.jpg" />
+    <Content Include="Images\TrekLogo.jpg" />
+    <Content Include="Images\TrekLogoH.jpg" />
+    <Content Include="InDetailsCal.htm" />
+    <Content Include="index.html" />
+    <Content Include="LiveGallery.htm" />
+    <Content Include="pagewithsidebar.html" />
+    <Content Include="portfolio-post.html" />
+    <Content Include="portfolio.html" />
+    <Content Include="RulesBook.htm" />
+    <Content Include="Sponsors.htm" />
+    <Content Include="style.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="style\color\red.css" />
+    <Content Include="style\css\ie7.css" />
+    <Content Include="style\css\ie8.css" />
+    <Content Include="style\css\ie9.css" />
+    <Content Include="style\css\jquery.slider.css" />
+    <Content Include="style\css\prettyPhoto.css" />
+    <Content Include="style\images\arrows.png" />
+    <Content Include="style\images\art\a1.jpg" />
+    <Content Include="style\images\art\a2.jpg" />
+    <Content Include="style\images\art\a3.jpg" />
+    <Content Include="style\images\art\a4.jpg" />
+    <Content Include="style\images\art\a5.jpg" />
+    <Content Include="style\images\art\about.jpg" />
+    <Content Include="style\images\art\ad1.jpg" />
+    <Content Include="style\images\art\ad2.jpg" />
+    <Content Include="style\images\art\ad3.jpg" />
+    <Content Include="style\images\art\ad4.jpg" />
+    <Content Include="style\images\art\bg1.jpg" />
+    <Content Include="style\images\art\bg2.jpg" />
+    <Content Include="style\images\art\bg3.jpg" />
+    <Content Include="style\images\art\bg4.jpg" />
+    <Content Include="style\images\art\bg5.jpg" />
+    <Content Include="style\images\art\bg6.jpg" />
+    <Content Include="style\images\art\c1.jpg" />
+    <Content Include="style\images\art\c2.jpg" />
+    <Content Include="style\images\art\c3.jpg" />
+    <Content Include="style\images\art\c4.jpg" />
+    <Content Include="style\images\art\c5.jpg" />
+    <Content Include="style\images\art\c6.jpg" />
+    <Content Include="style\images\art\f1.jpg" />
+    <Content Include="style\images\art\f2.jpg" />
+    <Content Include="style\images\art\f3.jpg" />
+    <Content Include="style\images\art\f4.jpg" />
+    <Content Include="style\images\art\f5.jpg" />
+    <Content Include="style\images\art\f6.jpg" />
+    <Content Include="style\images\art\f7.jpg" />
+    <Content Include="style\images\art\f8.jpg" />
+    <Content Include="style\images\art\f9.jpg" />
+    <Content Include="style\images\art\p1.jpg" />
+    <Content Include="style\images\art\p10.jpg" />
+    <Content Include="style\images\art\p11.jpg" />
+    <Content Include="style\images\art\p12.jpg" />
+    <Content Include="style\images\art\p13.jpg" />
+    <Content Include="style\images\art\p14.jpg" />
+    <Content Include="style\images\art\p2.jpg" />
+    <Content Include="style\images\art\p3.jpg" />
+    <Content Include="style\images\art\p4.jpg" />
+    <Content Include="style\images\art\p5.jpg" />
+    <Content Include="style\images\art\p6.jpg" />
+    <Content Include="style\images\art\p7.jpg" />
+    <Content Include="style\images\art\p8.jpg" />
+    <Content Include="style\images\art\p9.jpg" />
+    <Content Include="style\images\art\post1.jpg" />
+    <Content Include="style\images\art\post2.jpg" />
+    <Content Include="style\images\art\post3.jpg" />
+    <Content Include="style\images\art\s1.jpg" />
+    <Content Include="style\images\art\s2.jpg" />
+    <Content Include="style\images\art\s3.jpg" />
+    <Content Include="style\images\art\s4.jpg" />
+    <Content Include="style\images\art\se1.jpg" />
+    <Content Include="style\images\art\se2.jpg" />
+    <Content Include="style\images\art\se3.jpg" />
+    <Content Include="style\images\art\se4.jpg" />
+    <Content Include="style\images\bullet.png" />
+    <Content Include="style\images\button.png" />
+    <Content Include="style\images\CalendarSlider2015.jpg" />
+    <Content Include="style\images\CamelBakLogo.jpg" />
+    <Content Include="style\images\car-arrow.png" />
+    <Content Include="style\images\check-table.png" />
+    <Content Include="style\images\circle.png" />
+    <Content Include="style\images\codebg.jpg" />
+    <Content Include="style\images\cross.png" />
+    <Content Include="style\images\DavitaLogo.jpg" />
+    <Content Include="style\images\GalleryIcon.png" />
+    <Content Include="style\images\icon-category.png" />
+    <Content Include="style\images\icon-comment.png" />
+    <Content Include="style\images\icon-facebook.png" />
+    <Content Include="style\images\icon-flickr.png" />
+    <Content Include="style\images\icon-googleplus.png" />
+    <Content Include="style\images\icon-linkedin.png" />
+    <Content Include="style\images\icon-more.png" />
+    <Content Include="style\images\icon-play.png" />
+    <Content Include="style\images\icon-rss.png" />
+    <Content Include="style\images\icon-skype.png" />
+    <Content Include="style\images\icon-twitter.png" />
+    <Content Include="style\images\icon-youtube.png" />
+    <Content Include="style\images\icon-zoom.png" />
+    <Content Include="style\images\jquery-slider-rotator-left.png" />
+    <Content Include="style\images\jquery-slider-rotator-right.png" />
+    <Content Include="style\images\jquery-slider-theme.gif" />
+    <Content Include="style\images\jquery-slider-theme.png" />
+    <Content Include="style\images\LeapStartLogo.jpg" />
+    <Content Include="style\images\BBChLogo.png" />
+    <Content Include="style\images\MTBRace60.jpg" />
+    <Content Include="style\images\MTBRaceCrossCountry.jpg" />
+    <Content Include="style\images\MTBRaceCycloCross.jpg" />
+    <Content Include="style\images\MTBRaceDownHill.jpg" />
+    <Content Include="style\images\MTBRaceEpic100.jpg" />
+    <Content Include="style\images\MTBRaceITT.jpg" />
+    <Content Include="style\images\MTBRaceShortTrack.jpg" />
+    <Content Include="style\images\navs.png" />
+    <Content Include="style\images\page-navi.png" />
+    <Content Include="style\images\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="style\images\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="style\images\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="style\images\prettyPhoto\dark_rounded\default_thumbnail.gif" />
+    <Content Include="style\images\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="style\images\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="style\images\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="style\images\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="style\images\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="style\images\prettyPhoto\dark_square\default_thumbnail.gif" />
+    <Content Include="style\images\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="style\images\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="style\images\prettyPhoto\default\default_thumb.png" />
+    <Content Include="style\images\prettyPhoto\default\loader.gif" />
+    <Content Include="style\images\prettyPhoto\default\sprite.png" />
+    <Content Include="style\images\prettyPhoto\default\sprite_next.png" />
+    <Content Include="style\images\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="style\images\prettyPhoto\default\sprite_x.png" />
+    <Content Include="style\images\prettyPhoto\default\sprite_y.png" />
+    <Content Include="style\images\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="style\images\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="style\images\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="style\images\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="style\images\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="style\images\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="style\images\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="style\images\prettyPhoto\facebook\loader.gif" />
+    <Content Include="style\images\prettyPhoto\facebook\sprite.png" />
+    <Content Include="style\images\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="style\images\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="style\images\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="style\images\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="style\images\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="style\images\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="style\images\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="style\images\prettyPhoto\light_square\default_thumbnail.gif" />
+    <Content Include="style\images\prettyPhoto\light_square\loader.gif" />
+    <Content Include="style\images\prettyPhoto\light_square\sprite.png" />
+    <Content Include="style\images\quote.png" />
+    <Content Include="style\images\RaceIcon.png" />
+    <Content Include="style\images\RaodRace100.jpg" />
+    <Content Include="style\images\ResultIcon.png" />
+    <Content Include="style\images\RoadRaceCriterium.jpg" />
+    <Content Include="style\images\RoadRaceNandi.jpg" />
+    <Content Include="style\images\RoadRaceNandiCircuit.jpg" />
+    <Content Include="style\images\RoadRaceNightCriterium.jpg" />
+    <Content Include="style\images\RoadRaceTTT.jpg" />
+    <Content Include="style\images\RoadRaceITT.jpg" />
+    <Content Include="style\images\search.png" />
+    <Content Include="style\images\CalendarSlider.jpg" />
+    <Content Include="style\images\SitaBhatejaLogo.jpg" />
+    <Content Include="style\images\SufferFestLogo.jpg" />
+    <Content Include="style\images\TFNMontraLogo.png" />
+    <Content Include="style\images\tile.png" />
+    <Content Include="style\images\white-opacity-80.png" />
+    <Content Include="style\js\carousel.js" />
+    <Content Include="style\js\ddsmoothmenu.js" />
+    <Content Include="style\js\jquery-1.6.2.min.js" />
+    <Content Include="style\js\jquery.aw-showcase.js" />
+    <Content Include="style\js\jquery.jcarousel.js" />
+    <Content Include="style\js\jquery.masonry.min.js" />
+    <Content Include="style\js\jquery.prettyPhoto.js" />
+    <Content Include="style\js\jquery.slickforms.js" />
+    <Content Include="style\js\jquery.superbgimage.min.js" />
+    <Content Include="style\js\scripts.js" />
+    <Content Include="style\js\transify.js" />
+    <Content Include="The_How.htm" />
+    <Content Include="style\type\charis.css" />
+    <Content Include="style\type\charis\CharisSILI-webfont.svg" />
+    <Content Include="style\type\museo.css" />
+    <Content Include="style\type\museo\museo-300-webfont.svg" />
+    <Content Include="style\type\museo\museo-500-webfont.svg" />
+    <Content Include="style\type\museo\museo-700-webfont.svg" />
+    <Content Include="style\type\ptsans.css" />
+    <Content Include="style\type\ptsans\Paratype PT Sans Free Font License.txt" />
+    <Content Include="style\type\ptsans\ptsans-italic-webfont.svg" />
+    <Content Include="style\type\ptsans\ptsans-regular-webfont.svg" />
+    <Content Include="TopMenu.htm" />
+    <Content Include="VitaminM.htm" />
+    <Content Include="Volunteers.htm" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\ChangePassword.aspx.designer.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.vb">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.vb">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="style\js\.DS_Store" />
+    <None Include="style\type\charis\CharisSILI-webfont.eot" />
+    <None Include="style\type\charis\CharisSILI-webfont.ttf" />
+    <None Include="style\type\charis\CharisSILI-webfont.woff" />
+    <None Include="style\type\museo\museo-300-webfont.eot" />
+    <None Include="style\type\museo\museo-300-webfont.ttf" />
+    <None Include="style\type\museo\museo-300-webfont.woff" />
+    <None Include="style\type\museo\museo-500-webfont.eot" />
+    <None Include="style\type\museo\museo-500-webfont.ttf" />
+    <None Include="style\type\museo\museo-500-webfont.woff" />
+    <None Include="style\type\museo\museo-700-webfont.eot" />
+    <None Include="style\type\museo\museo-700-webfont.ttf" />
+    <None Include="style\type\museo\museo-700-webfont.woff" />
+    <None Include="style\type\ptsans\ptsans-italic-webfont.eot" />
+    <None Include="style\type\ptsans\ptsans-italic-webfont.ttf" />
+    <None Include="style\type\ptsans\ptsans-italic-webfont.woff" />
+    <None Include="style\type\ptsans\ptsans-regular-webfont.eot" />
+    <None Include="style\type\ptsans\ptsans-regular-webfont.ttf" />
+    <None Include="style\type\ptsans\ptsans-regular-webfont.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4812</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
