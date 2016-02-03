@@ -109,11 +109,13 @@
     <Content Include="BBCh15Race08.htm" />
     <Content Include="BBCh15Race09.htm" />
     <Content Include="BBCh15Race10.htm" />
+    <Content Include="BBCh16Race01.htm" />
     <Content Include="BBChLogoCompetition2015.htm" />
     <Content Include="BBChTeams.htm" />
     <Content Include="BBCh_Expenses.htm" />
     <Content Include="Calendar2014.htm" />
     <Content Include="Calendar2015.htm" />
+    <Content Include="Calendar2016.htm" />
     <Content Include="FAQs.htm" />
     <Content Include="Footer.htm" />
     <Content Include="fullwidth.html" />
@@ -153,6 +155,7 @@
     <Content Include="Images\BBCh15_Race06_SP_Banner.gif" />
     <Content Include="Images\BBCh15_Race07_SP_Banner.gif" />
     <Content Include="Images\BBCh15_Race08_SP_Banner.gif" />
+    <Content Include="Images\BBCh16BannerRace01.jpg" />
     <Content Include="Images\BBChLogoCompetition.jpg" />
     <Content Include="Images\BBChParty001.jpg" />
     <Content Include="Images\BBChParty002.jpg" />
