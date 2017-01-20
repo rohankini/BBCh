@@ -212,10 +212,10 @@ ul
 }
 ul li
 {
-    background-image: url(style/images/bullet.png);
+    /*background-image: url(style/images/bullet.png);
     background-repeat: no-repeat;
     background-position: 0px 5px; 
-    padding-left: 15px; 
+    padding-left: 15px; */
 
 	/*background: transparent url(style/images/bullet.png) center left no-repeat;
 	padding-left: 15px;*/
@@ -539,7 +539,7 @@ pre {
 }
 .menu ul li a {
 	display: block;
-	padding: 20px 30px;
+	padding: 20px 27px 20px 27px;
 	text-decoration: none;
 	display:block;
 	line-height: 1;
@@ -549,7 +549,7 @@ pre {
 
 /* Webkit Fix */
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
-.menu ul li a {padding: 21px 30px 19px;}
+.menu ul li a {padding: 21px 27px 19px 27px;}
 }
 
 * html .menu ul li a {
