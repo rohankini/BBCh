@@ -10,6 +10,10 @@
     <link rel="stylesheet" type="text/css" href="style/type/museo.css" media="all" />
     <link rel="stylesheet" type="text/css" href="style/type/ptsans.css" media="all" />
     <link rel="stylesheet" type="text/css" href="style/type/charis.css" media="all" />
+
+    <link href="W3.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!--[if IE 7]>
 <link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" />
 <![endif]-->
@@ -49,91 +53,11 @@
     
     /* Slider Style - Start */
     
-.css-slideshow{
-  position: relative;
-  max-width: 495px;
-  height: 370px;
-  margin: 20px auto 20px auto;
-}
-.css-slideshow figure{
-  margin: 0;
-  max-width: 495px;
-  height: 370px;
-  background: #000;
-  position: absolute;
-}
-.css-slideshow img{
-  box-shadow: 0 0 2px #666;
-}
-.css-slideshow figcaption{
-  position: absolute;
-  top: 0;
-  color: #fff;
-  background: rgba(0,0,0, .3);
-  font-size: .8em;
-  padding: 8px 12px;
-  opacity: 0;
-  transition: opacity .5s;
-}
-.css-slideshow:hover figure figcaption{
-  transition: opacity .5s;
-  opacity: 1;
-}
-.css-slideshow-attr{
-  max-width: 495px;
-  text-align: right;
-  font-size: .7em;
-  font-style: italic;
-  margin:0 auto;
-}
-.css-slideshow-attr a{
-  color: #666;
-}
-.css-slideshow figure{
-  opacity:0;
-}
-figure:nth-child(1) {
-  animation: xfade 48s 42s infinite;
-}
-figure:nth-child(2) {
-  animation: xfade 48s 36s infinite;
-}
-figure:nth-child(3) {
-  animation: xfade 48s 30s infinite;
-}
-figure:nth-child(4) {
-  animation: xfade 48s 24s infinite;
-}
-figure:nth-child(5) {
-  animation: xfade 48s 18s infinite;
-}
-figure:nth-child(6) {
-  animation: xfade 48s 12s infinite;
-}
-figure:nth-child(7) {
-  animation: xfade 48s 6s infinite;
-}
-figure:nth-child(8) {
-  animation: xfade 48s 0s infinite;
-}
-
-@keyframes xfade{
-  0%{
-    opacity: 1;
-  }
-  10.5% {
-    opacity: 1;
-  }
-  12.5%{
-    opacity: 0;
-  }
-  98% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+    .TShirtSlides {display:none}
+    .BagCoverSlides {display:none}
+    
+    .w3-left, .w3-right, .w3-badge {cursor:pointer}
+    .w3-badge {height:13px;width:13px;padding:0}
 
 /* Slider Style - End */
 
@@ -184,6 +108,14 @@ ul.tab li a:focus, .active {
 /* Tab Style - End */
 
 </style>
+
+
+
+
+
+
+
+
 </head>
 <body>
     <!-- Fullscreen backgrounds -->
@@ -312,83 +244,82 @@ ul.tab li a:focus, .active {
                 <div>
                     <ul class="tab">
                         <li>
-                            <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Blue')" id="defaultOpen">
-                                <img alt="" src="Images/LeopardSkynLogoG.jpg" />
+                            <a href="javascript:void(0)" class="tablinks" onclick="openMerchandise(event, 'Tshirts')" id="defaultOpen">
+                                <img alt="BBCh T-Shirts" src="Images/Merchandise/Tshirts/TShirtBlack001.jpg" /><br />
+                                T-Shirt<br /><br />
                             </a>
                         </li>
-                        <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Red')">
-                            <img alt="" src="Images/LeopardSkynLogoH.jpg" />
+                        <li style="text-align: center">
+                            <a href="javascript:void(0)" class="tablinks" onclick="openMerchandise(event, 'BagRainCover')">
+                            <img alt="BBCh Backpack Rain Cover" src="Images/Merchandise/BagRainCover/BagRainCover001.jpg" /><br />
+                                Backpack<br />Rain/Dust Cover
                         </a></li>
-                        <!--<li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Green')">
+                        <!--<li><a href="javascript:void(0)" class="tablinks" onclick="openMerchandise(event, 'Green')">
                             <img alt="" src="Images/LeopardSkynLogoG.jpg" />
                         </a></li>-->
                     </ul>
-                    <div id="Blue" class="tabcontent">
+                    <div id="Tshirts" class="tabcontent">
                         <div>
                             <a name="BBChTshirt"></a>
                             <h2>
                                 BBCh T-Shirt</h2>
                         </div>
-                        <div class="css-slideshow">
-                            <figure>
-                                <img src="http://themarklee.com/wp-content/uploads/2013/10/class-header-css3.jpg"
-                                    alt="class-header-css3" width="495" height="370" class="alignnone size-full wp-image-172" />
-                                <!--<figcaption><strong>CSS3:</strong> CSS3 delivers a wide range of stylization and effects, enhancing 
-                                            the web app without sacrificing your semantic structure or performance. Additionally Web Open Font 
-                                            Format (WOFF) provides typographic flexibility and control far beyond anything the web has offered 
-                                            before.</figcaption>-->
-                            </figure>
-                            <figure>
-                                <img src="http://themarklee.com/wp-content/uploads/2013/10/class-header-semantics.jpg"
-                                    alt="class-header-semantics" width="495" height="370" class="alignnone size-full wp-image-179" />
-                                <!--<figcaption><strong>Semantics:</strong> Giving meaning to structure, semantics are front and center 
-                                            with HTML5. A richer set of tags, along with RDFa, microdata, and microformats, are enabling a more 
-                                            useful, data driven web for both programs and your users.</figcaption>-->
-                            </figure>
-                            <figure>
-                                <img src="http://themarklee.com/wp-content/uploads/2013/10/class-header-offline.jpg"
-                                    alt="class-header-offline" width="495" height="370" class="alignnone size-large wp-image-178" />
-                                <!--<figcaption><strong>Offline &amp; Storage:</strong> Web Apps can start faster and work even if there 
-                                            is no internet connection, thanks to the HTML5 App Cache, as well as the Local Storage, Indexed DB, 
-                                            and the File API specifications.</figcaption>-->
-                            </figure>
-                            <figure>
-                                <img src="http://themarklee.com/wp-content/uploads/2013/10/class-header-device.jpg"
-                                    alt="class-header-device" width="495" height="370" class="alignnone size-full wp-image-177" />
-                                <!--<figcaption><strong>Device Access:</strong> Beginning with the Geolocation API, Web Applications 
-                                            can present rich, device-aware features and experiences. Incredible device access innovations are 
-                                            being developed and implemented, from audio/video input access to microphones and cameras, to local 
-                                            data such as contacts &amp; events, and even tilt orientation.</figcaption>-->
-                            </figure>
-                            <figure>
-                                <img src="http://themarklee.com/wp-content/uploads/2013/10/class-header-connectivity.jpg"
-                                    alt="class-header-connectivity" width="495" height="370" class="alignnone size-large wp-image-176" />
-                                <!--<figcaption><strong>Connectivity:</strong> More efficient connectivity means more real-time chats, 
-                                            faster games, and better communication. Web Sockets and Server-Sent Events are pushing (pun intended) 
-                                            data between client and server more efficiently than ever before.</figcaption>-->
-                            </figure>
-                            <figure>
-                                <img src="http://themarklee.com/wp-content/uploads/2013/10/class-header-multimedia.jpg"
-                                    alt="class-header-multimedia" width="495" height="370" class="alignnone size-large wp-image-175" />
-                                <!--<figcaption><strong>Multimedia:</strong> Audio and video are first class citizens in the HTML5 web, 
-                                            living in harmony with your apps and sites. Lights, camera, action!</figcaption>-->
-                            </figure>
-                            <figure>
-                                <img src="http://themarklee.com/wp-content/uploads/2013/10/class-header-3d.jpg" alt="class-header-3d"
-                                    width="495" height="370" class="alignnone size-large wp-image-174" />
-                                <!--<figcaption><strong>3D,
-                                                Graphics &amp; Effects:</strong> Between SVG, Canvas, WebGL, and CSS3 3D features, you're sure 
-                                                to amaze your users with stunning visuals natively rendered in the browser.</figcaption>-->
-                            </figure>
-                            <figure>
-                                <img src="http://themarklee.com/wp-content/uploads/2013/10/class-header-performance.jpg"
-                                    alt="class-header-performance" width="495" height="370" class="alignnone size-large wp-image-173" />
-                                <!--<figcaption><strong>Performance
-                                                &amp; Integration:</strong> Make your Web Apps and dynamic web content faster with a variety 
-                                                of techniques and technologies such as Web Workers and XMLHttpRequest 2. No user should ever 
-                                                wait on your watch.</figcaption>-->
-                            </figure>
+                        
+
+                        <div class="w3-content w3-display-container" style="max-width: 600px; height: 600px">
+                            <img alt="BBCh T-Shirt" class="TShirtSlides" src="Images/Merchandise/Tshirts/003_1.jpg" style="width: 100%; height: 600px" />
+                            <img alt="BBCh T-Shirt" class="TShirtSlides" src="Images/Merchandise/Tshirts/004_1.jpg" style="width: 100%; height: 600px" />
+                            <img alt="BBCh T-Shirt" class="TShirtSlides" src="Images/Merchandise/Tshirts/001_1.jpg" style="width: 100%; height: 600px" />
+                            <img alt="BBCh T-Shirt" class="TShirtSlides" src="Images/Merchandise/Tshirts/002_1.jpg" style="width: 100%; height: 600px" />
+                            <img alt="BBCh T-Shirt" class="TShirtSlides" src="Images/Merchandise/Tshirts/005_1.jpg" style="width: 100%; height: 600px" />
+                            <img alt="BBCh T-Shirt" class="TShirtSlides" src="Images/Merchandise/Tshirts/006_1.jpg" style="width: 100%; height: 600px" />
+
+                            <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width: 300px">
+                                
+                                <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs1(-1)">&#10094;</div>
+                                <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs1(1)">&#10095;</div>
+
+                                <span class="w3-badge TShirt w3-border w3-transparent w3-hover-white" onclick="currentDiv1(1)"></span>
+                                <span class="w3-badge TShirt w3-border w3-transparent w3-hover-white" onclick="currentDiv1(2)"></span>
+                                <span class="w3-badge TShirt w3-border w3-transparent w3-hover-white" onclick="currentDiv1(3)"></span>
+                                <span class="w3-badge TShirt w3-border w3-transparent w3-hover-white" onclick="currentDiv1(4)"></span>
+                                <span class="w3-badge TShirt w3-border w3-transparent w3-hover-white" onclick="currentDiv1(5)"></span>
+                                <span class="w3-badge TShirt w3-border w3-transparent w3-hover-white" onclick="currentDiv1(6)"></span>
+                            </div>
                         </div>
+                        
+                        <!--Slider Script - Start -->
+                        <script type="text/javascript">
+                            var slideIndex1 = 1;
+                            showDivs1(slideIndex1);
+
+                            function plusDivs1(c) {
+                                showDivs1(slideIndex1 += c);
+                            }
+
+                            function currentDiv1(c) {
+                                showDivs1(slideIndex1 = c);
+                            }
+
+                            function showDivs1(c) {
+                                var a;
+                                var b = document.getElementsByClassName("TShirtSlides");
+                                var dots1 = document.getElementsByClassName("TShirt");
+                                if (c > b.length) { slideIndex1 = 1 }
+                                if (c < 1) { slideIndex1 = b.length }
+                                for (a = 0; a < b.length; a++) {
+                                    b[a].style.display = "none";
+                                }
+                                for (a = 0; a < dots1.length; a++) {
+                                    dots1[a].className = dots1[a].className.replace(" w3-white", "");
+                                }
+                                b[slideIndex1 - 1].style.display = "block";
+                                dots1[slideIndex1 - 1].className += " w3-white";
+                            }
+                        </script>
+                        <!--Slider Script - End -->
+
+                        <br /><br />
                         <div style="text-align: justify">
                             <p>
                                 <span class="CaptionText">T-shirt Description:</span><br />
@@ -403,17 +334,17 @@ ul.tab li a:focus, .active {
                                 <span class="CaptionText">Sizing Chart:</span><br />
                                 <span class="CaptionText">Shipping Description:</span><br />
                                 <br />
-                                <b>SHIPPING WITHIN BANGALORE: FREE</b><br />
-                                if you are ordering online within Bangalore then relax and wait at home to receive
+                                <b>SHIPPING WITHIN INDIA: FREE</b><br />
+                                If you are ordering online within Bangalore then relax and wait at home to receive
                                 your order by speed post or courier within few working days and the shipping cost
                                 is on us.
                                 <br />
                                 <br />
-                                <b>SHIPPING WITHIN INDIA: 30 RUPEES</b><br />
+                                <!--<b>SHIPPING WITHIN INDIA: 30 RUPEES</b><br />
                                 Friends who are ordering from different parts of India, outside Bangalore, will
                                 receive it by speed post or courier in few days’ time at a nominal cost of ₹30 only.
                                 <br />
-                                <br />
+                                <br />-->
                                 <b>NO INTERNATIONAL SHIPPING</b><br />
                                 We regret not to have facility of shipping overseas but you never know, may be someday
                                 !<br />
@@ -450,97 +381,116 @@ ul.tab li a:focus, .active {
                             </p>
                         </div>
                     </div>
-                    <div id="Red" class="tabcontent">
+                    <div id="BagRainCover" class="tabcontent">
                         <div>
                             <a name="BBChRainCover"></a>
                             <h2>
                                 BBCh Backpack Raincover</h2>
                         </div>
-                        <div class="css-slideshow">
-                            <figure>
-                                <img src="http://themarklee.com/wp-content/uploads/2013/10/class-header-css3.jpg"
-                                    alt="class-header-css3" width="495" height="370" class="alignnone size-full wp-image-172" />
-                                <!--<figcaption><strong>CSS3:</strong> CSS3 delivers a wide range of stylization and effects, enhancing 
-                            the web app without sacrificing your semantic structure or performance. Additionally Web Open Font 
-                            Format (WOFF) provides typographic flexibility and control far beyond anything the web has offered 
-                            before.</figcaption>-->
-                            </figure>
-                            <figure>
-                                <img src="http://themarklee.com/wp-content/uploads/2013/10/class-header-semantics.jpg"
-                                    alt="class-header-semantics" width="495" height="370" class="alignnone size-full wp-image-179" />
-                                <!--<figcaption><strong>Semantics:</strong> Giving meaning to structure, semantics are front and center 
-                            with HTML5. A richer set of tags, along with RDFa, microdata, and microformats, are enabling a more 
-                            useful, data driven web for both programs and your users.</figcaption>-->
-                            </figure>
-                            <figure>
-                                <img src="http://themarklee.com/wp-content/uploads/2013/10/class-header-offline.jpg"
-                                    alt="class-header-offline" width="495" height="370" class="alignnone size-large wp-image-178" />
-                                <!--<figcaption><strong>Offline &amp; Storage:</strong> Web Apps can start faster and work even if there 
-                            is no internet connection, thanks to the HTML5 App Cache, as well as the Local Storage, Indexed DB, 
-                            and the File API specifications.</figcaption>-->
-                            </figure>
-                            <figure>
-                                <img src="http://themarklee.com/wp-content/uploads/2013/10/class-header-device.jpg"
-                                    alt="class-header-device" width="495" height="370" class="alignnone size-full wp-image-177" />
-                                <!--<figcaption><strong>Device Access:</strong> Beginning with the Geolocation API, Web Applications 
-                            can present rich, device-aware features and experiences. Incredible device access innovations are 
-                            being developed and implemented, from audio/video input access to microphones and cameras, to local 
-                            data such as contacts &amp; events, and even tilt orientation.</figcaption>-->
-                            </figure>
-                            <figure>
-                                <img src="http://themarklee.com/wp-content/uploads/2013/10/class-header-connectivity.jpg"
-                                    alt="class-header-connectivity" width="495" height="370" class="alignnone size-large wp-image-176" />
-                                <!--<figcaption><strong>Connectivity:</strong> More efficient connectivity means more real-time chats, 
-                            faster games, and better communication. Web Sockets and Server-Sent Events are pushing (pun intended) 
-                            data between client and server more efficiently than ever before.</figcaption>-->
-                            </figure>
-                            <figure>
-                                <img src="http://themarklee.com/wp-content/uploads/2013/10/class-header-multimedia.jpg"
-                                    alt="class-header-multimedia" width="495" height="370" class="alignnone size-large wp-image-175" />
-                                <!--<figcaption><strong>Multimedia:</strong> Audio and video are first class citizens in the HTML5 web, 
-                            living in harmony with your apps and sites. Lights, camera, action!</figcaption>-->
-                            </figure>
-                            <figure>
-                                <img src="http://themarklee.com/wp-content/uploads/2013/10/class-header-3d.jpg" alt="class-header-3d"
-                                    width="495" height="370" class="alignnone size-large wp-image-174" />
-                                <!--<figcaption><strong>3D,
-                                Graphics &amp; Effects:</strong> Between SVG, Canvas, WebGL, and CSS3 3D features, you're sure 
-                                to amaze your users with stunning visuals natively rendered in the browser.</figcaption>-->
-                            </figure>
-                            <figure>
-                                <img src="http://themarklee.com/wp-content/uploads/2013/10/class-header-performance.jpg"
-                                    alt="class-header-performance" width="495" height="370" class="alignnone size-large wp-image-173" />
-                                <!--<figcaption><strong>Performance
-                                &amp; Integration:</strong> Make your Web Apps and dynamic web content faster with a variety 
-                                of techniques and technologies such as Web Workers and XMLHttpRequest 2. No user should ever 
-                                wait on your watch.</figcaption>-->
-                            </figure>
+                        
+                        <div class="w3-content w3-display-container" style="max-width: 600px; height: 600px">
+                            <img alt="BBCh T-Shirt" class="BagCoverSlides" src="Images/Merchandise/Tshirts/003_1.jpg" style="width: 100%; height: 600px" />
+                            <img alt="BBCh T-Shirt" class="BagCoverSlides" src="Images/Merchandise/Tshirts/004_1.jpg" style="width: 100%; height: 600px" />
+                            <img alt="BBCh T-Shirt" class="BagCoverSlides" src="Images/Merchandise/Tshirts/001_1.jpg" style="width: 100%; height: 600px" />
+                            <img alt="BBCh T-Shirt" class="BagCoverSlides" src="Images/Merchandise/Tshirts/002_1.jpg" style="width: 100%; height: 600px" />
+                            <img alt="BBCh T-Shirt" class="BagCoverSlides" src="Images/Merchandise/Tshirts/005_1.jpg" style="width: 100%; height: 600px" />
+                            <img alt="BBCh T-Shirt" class="BagCoverSlides" src="Images/Merchandise/Tshirts/006_1.jpg" style="width: 100%; height: 600px" />
+
+                            <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width: 300px">
+                                
+                                <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs2(-1)">&#10094;</div>
+                                <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs2(1)">&#10095;</div>
+
+                                <span class="w3-badge BagCover w3-border w3-transparent w3-hover-white" onclick="currentDiv2(1)"></span>
+                                <span class="w3-badge BagCover w3-border w3-transparent w3-hover-white" onclick="currentDiv2(2)"></span>
+                                <span class="w3-badge BagCover w3-border w3-transparent w3-hover-white" onclick="currentDiv2(3)"></span>
+                                <span class="w3-badge BagCover w3-border w3-transparent w3-hover-white" onclick="currentDiv2(4)"></span>
+                                <span class="w3-badge BagCover w3-border w3-transparent w3-hover-white" onclick="currentDiv2(5)"></span>
+                                <span class="w3-badge BagCover w3-border w3-transparent w3-hover-white" onclick="currentDiv2(6)"></span>
+                            </div>
                         </div>
+
+
+                        <!--Slider Script - Start -->
+                        <script type="text/javascript">
+                            var slideIndex = 1;
+                            showDivs(slideIndex);
+
+                            function plusDivs2(n) {
+                                showDivs(slideIndex += n);
+                            }
+
+                            function currentDiv2(n) {
+                                showDivs(slideIndex = n);
+                            }
+
+                            function showDivs(n) {
+                                var i;
+                                var x = document.getElementsByClassName("BagCoverSlides");
+                                var dots = document.getElementsByClassName("BagCover");
+                                if (n > x.length) { slideIndex = 1 }
+                                if (n < 1) { slideIndex = x.length }
+                                for (i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none";
+                                }
+                                for (i = 0; i < dots.length; i++) {
+                                    dots[i].className = dots[i].className.replace(" w3-white", "");
+                                }
+                                x[slideIndex - 1].style.display = "block";
+                                dots[slideIndex - 1].className += " w3-white";
+                            }
+                        </script>
+                        <!--Slider Script - End -->
+                        
+                        <br /><br />
+
                         <div style="text-align: justify">
                             <p>
-                                <span class="CaptionText">T-shirt Description:</span><br />
-                                - BBCH t-shirts have come to life on demand by our cycling community who has liked
-                                the exclusive designs. We are happy to initiate this process of making the adorable
-                                t-shirts available for everyone.<br />
-                                - Being in the tropical country, it is most comfortable to wear complete cotton
-                                t-shirt almost for any occasion trouble-free.<br />
-                                - The fabric is smooth and ideal to wrap around the skin.
+                                <span class="CaptionText">BBCh Rain & Dust Cover with Pouch for Laptop Bags and Backpacks</span><br />
+                                <span class="CaptionText">Description:</span><br />
+                                Now no more stuck in rain and No more wait for that perfect weather to step out, cover 
+                                your backpack with BBCH Rain Cover for backpack bag and rest assured about your belongings 
+                                in bag, this Specially Waterproof rain cover keep your backpack and belongings dry from rain, 
+                                mud and dust.<br /><br />
+
+                                Now riders/biker don't have to worry about dislodge of their bag Raincover, 
+                                BBCH raincover for backpack is specially designed and Velcro tape holds the 
+                                bag tight, No more dislodge in heavy wind for bikers.<br /><br />
+
+                                <b>Material:</b> Specially reinforced dual PU coated Waterproof Material<br />
+                                <b>Compatibility:</b> For medium sized backpacks upto 25-35 Ltr<br /><br />
+                                
+                                <span class="CaptionText">Features and details:</span><br /><br />
+
+                                - BBCh logo / Cycle logo on cover with reflective tape<br />
+                                - Rain / Dust Cover for backpacks for any medium and large size backpack.<br />
+                                - Velcro tape the bag tight, No more dislodge in heavy wind for riders/bikers with 
+                                elastic design, it is very convenient to adjust the size according to different backpacks.<br />
+                                - Waterproof Material<br />
+                                - Separate Pouch to keep wet Rain cover<br />
+                                - Reflective tapes for better visibility in night.<br /><br />
+                                
+                                <b>Please Note:</b> Backpack bag is NOT INCLUDED, you will receive only Rain Cover & a Pouch to 
+                                keep the rain cover. Bag showing in image is for representation purpose only.<br /><br />
+                                
                                 <br />
                                 <br />
-                                <span class="CaptionText">Sizing Chart:</span><br />
+                                <span class="CaptionText">Sizing:</span><br />
+                                Medium sized backpacks upto 25-35 Ltr<br /><br />
+
                                 <span class="CaptionText">Shipping Description:</span><br />
                                 <br />
-                                <b>SHIPPING WITHIN BANGALORE: FREE</b><br />
-                                if you are ordering online within Bangalore then relax and wait at home to receive
+                                <b>SHIPPING WITHIN INDIA: FREE</b><br />
+                                If you are ordering online within Bangalore then relax and wait at home to receive
                                 your order by speed post or courier within few working days and the shipping cost
                                 is on us.
                                 <br />
                                 <br />
-                                <b>SHIPPING WITHIN INDIA: 30 RUPEES</b><br />
+                                <!--<b>SHIPPING WITHIN INDIA: 30 RUPEES</b><br />
                                 Friends who are ordering from different parts of India, outside Bangalore, will
                                 receive it by speed post or courier in few days’ time at a nominal cost of ₹30 only.
                                 <br />
-                                <br />
+                                <br />-->
                                 <b>NO INTERNATIONAL SHIPPING</b><br />
                                 We regret not to have facility of shipping overseas but you never know, may be someday
                                 !<br />
@@ -549,13 +499,12 @@ ul.tab li a:focus, .active {
                                 We really do not foresee this but in case of requirement to return or exchange,
                                 you may please do the following.<br />
                                 <br />
-                                EXCHANGES Let's keep it simple. If the delivered t-shirt does not fit on you or
-                                if you find any manufacturing defect then immediately please email us at <a href="mailto:council@bbch.in">
-                                    council@bbch.in</a> and let us know your order number and the size you wish
-                                to exchange for. Kindly return your t-shirt in an un-worn condition and we will
-                                send you your preferred one by speed post ir courier within a reasonable time and
-                                we will notify you via email once your return has been processed. We would request
-                                you to track your parcel through tracking number.<br />
+                                
+                                EXCHANGES:<br />
+                                If you find any manufacturing defect then immediately please email us at <a href="mailto:council@bbch.in">
+                                council@bbch.in</a> and let us know your order number. Kindly return damaged / defective item and we 
+                                will send you by speed post or courier within a reasonable time and we will notify you via email once your 
+                                return has been processed. We would request you to track your parcel through tracking number.<br />
                                 <br />
                                 Kindly note the Return address for exchanges:<br />
                                 <b>Bangalore Bicycle Championship</b><br />
@@ -584,7 +533,7 @@ ul.tab li a:focus, .active {
                             Tokyo is the capital of Japan.</p>
                     </div>-->
                     <script type="text/javascript">
-                        function openCity(evt, ProductName) {
+                        function openMerchandise(evt, ProductName) {
                             var i, tabcontent, tablinks;
                             tabcontent = document.getElementsByClassName("tabcontent");
                             for (i = 0; i < tabcontent.length; i++) {
@@ -601,12 +550,9 @@ ul.tab li a:focus, .active {
                         // Get the element with id="defaultOpen" and click on it
                         document.getElementById("defaultOpen").click();
                     </script>
+
                 </div>
-                <br />
-                <br />
-                <hr />
-                <br />
-                <br />
+                
                 <br />
                 <br />
                 <div class="clear">
