@@ -696,8 +696,8 @@ div.showcase-tooltip {
 .showcase-caption {
 	color: #000;        padding: 9px 15px 7px 15px;     text-align: left;
 	line-height: 150%;  position: absolute;             
-	bottom: 10px;       font-weight: bold;
-	left: 10px;         letter-spacing: 1px;
+	bottom: 37px;       font-weight: bold;
+	left: 2px;         letter-spacing: 1px;
 	display: none;      width: auto;
 	background-image: url(style/images/white-opacity-80.png);
 	opacity:0.9;        filter:alpha(opacity=70);
