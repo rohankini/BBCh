@@ -53,6 +53,10 @@
     background-image:url('Images/TrekLogo.jpg');
 }
 
+.SponsorsTableStyle
+{
+    text-align: center; background-color: #fff; vertical-align: top;
+}
 
 
 /*-----------------------------------------------------------------------------------*/
