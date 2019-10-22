@@ -160,13 +160,15 @@ p {
 	line-height: 20px;
 }
 a {
-	color: #4d87ab;
+	color: #007eff !important;
 	text-decoration: none;
 	-webkit-transition:all 200ms ease-in;
 	-moz-transition:all 200ms ease-in;
+	text-decoration: underline;
+	font-style: italic;
 }
 a:hover {
-	color: #d3573e;
+	color: #ad28d3 !important;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Museo500';
